@@ -15,8 +15,13 @@
 fn main() {
     // You can optionally experiment here.
 }
-
-// Don't change the tests!
+fn calculate_price_of_apples(apples: i32) -> i32 {
+    if apples > 40 {
+        apples
+    } else {
+        apples * 2
+    }
+} // Don't change the tests!
 #[cfg(test)]
 mod tests {
     use super::*;
